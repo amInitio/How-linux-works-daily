@@ -14,6 +14,12 @@ case "$1" in
         
         mkdir -p "$DAY_DIR"
         echo "$DAY_DIR" > "$DAY_FILE"
+
+        if [ ! -f .gitignore ] || ! grep -q "$DAY_FILE" .gitignore; then
+            echo "$DAY_FILE" >> .gitignore
+            echo "🛡️ Added $DAY_FILE to .gitignore"
+        fi
+
         echo "📅 Active day directory set to: $DAY_DIR/"
         ;;
 
@@ -42,10 +48,9 @@ echo "🚀 Running lab environment..."
 EOF
         chmod +x "$TARGET_DIR/demo.sh"
 
-        cat << EOF > "$TARGET_DIR/notes.md"
-# ${PARENT_DAY_DIR^^} - ${TOPIC_TITLE^}
+        cat << EOF > "$TARGET_DIR/notes-fa.md"
+# ${PARENT_DAY_DIR^^} - ${TOPIC_TITLE^} (فارسی)
 
-<div dir="rtl">
 
 ### 🧠 Mechanism (مکانیزم داخلی لینوکس)
 - 
@@ -59,9 +64,10 @@ EOF
 ### ⚠️ Pitfalls (اشتباهات رایج)
 - 
 
-</div>
+EOF
 
----
+cat << EOF > "$TARGET_DIR/notes-en.md"
+# ${PARENT_DAY_DIR^^} - ${TOPIC_TITLE^} (English)
 
 ### 🧠 Mechanism
 - 
