@@ -96,6 +96,7 @@ case "$1" in
 
         echo "📁 Creating standard topic structure in: $TARGET_DIR..."
         mkdir -p "$TARGET_DIR/lab"
+        touch "$TARGET_DIR/lab/just-for-commit"
 
         cat << 'EOF' > "$TARGET_DIR/demo.sh"
 #!/usr/bin/env bash
