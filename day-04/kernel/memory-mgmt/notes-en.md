@@ -14,7 +14,7 @@ To achieve this without destroying performance, the hardware provides a **Memory
 Instead of addressing physical hardware pins directly, a process operates under the abstraction that it owns the entire machine's address space. When a process attempts a memory access, the hardware MMU intercepts it and uses a translation map—known as a **Page Table**—to map the virtual address to a physical address in RAM. The kernel is responsible for initializing and swapping these Page Tables during every context switch.
 
 ### 🔍 OS Hook
-* **The `/proc/[PID]/maps` Interface:** The Linux kernel exposes the virtual memory layout of any active process through the `procfs` virtual file system. By reading `/proc/$$/maps`, you can observe the precise virtual address boundaries mapped by the MMU, along with memory permission flags (`r--`, `rw-`, `r-x`).
+* **The `/proc/[PID]/maps` Interface:** The Linux kernel exposes the virtual memory layout of any active process through the `procfs` virtual file system. By reading `/proc/$$/maps`, you can observe the precise virtual address boundaries (structured by the kernel to be translated by the hardware MMU), along with memory permission flags (`r--`, `rw-`, `r-x`).
 
 ### 🛠️ Lab & Tools
 **Hands-on Lab: Dissecting Virtual Memory Layout and Access Flags**
