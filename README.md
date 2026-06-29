@@ -18,12 +18,16 @@ This repository contains technical summaries, hands-on labs, and daily coding ex
 
 ## 📅 Roadmap & Daily Tracking / نقشه راه و رهگیری روزانه
 
-| Day / روز | Topic / موضوع فنی | Key Concept / مفهوم کلیدی | Lab Structure / ساختار عملی | Docs / مستندات |
-|:---:|:---|:---|:---|:---:|
-| **01** | Not added yet | Not added yet | Not added yet | [📂](./Not-added-yet/) |
-| **02** | Not added yet | Not added yet | Not added yet | [📂](./Not-added-yet/) |
-| **03** | Not added yet | Not added yet | Not added yet | [📂](./Not-added-yet/) |
-| **04** | Not added yet | Not added yet | Not added yet | [📂](./Not-added-yet/) |
+| Day / روز | Docs / مستندات |
+|:---:|:---|
+| **01** | [📂](./day-01/) |
+| **02** | [📂](./day-02/) |
+| **03** | [📂](./day-03/) |
+| **04** | [📂](./day-04/) |
+| **05** | [📂](./day-05/) |
+| **06** | [📂](./day-06/) |
+| **07** | [📂](./day-07/) |
+| **08** | [📂](./day-08/) |
 
 ---
 
